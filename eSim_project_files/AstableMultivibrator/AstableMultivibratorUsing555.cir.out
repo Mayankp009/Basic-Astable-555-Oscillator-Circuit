@@ -1,0 +1,24 @@
+* c:\users\mayan\esim-workspace\astablemultivibratorusing555\astablemultivibratorusing555.cir
+
+.include lm555n.sub
+x1 gnd capacitor-voltage outputvoltage net-_r1-pad1_ net-_c2-pad1_ capacitor-voltage net-_r1-pad2_ net-_r1-pad1_ lm555n
+r1  net-_r1-pad1_ net-_r1-pad2_ 1k
+r2  net-_r1-pad2_ capacitor-voltage 10k
+c1  capacitor-voltage gnd 0.1u
+c2  net-_c2-pad1_ gnd 0.01u
+r3  outputvoltage gnd 1k
+* u2  outputvoltage plot_v1
+* u1  capacitor-voltage plot_v1
+v1 net-_r1-pad1_ gnd  dc 10
+.tran 1e-03 10e-03 0e-00
+
+* Control Statements 
+.control
+option noopalter
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(outputvoltage)
+plot v(capacitor-voltage)
+.endc
+.end
