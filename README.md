@@ -6,14 +6,13 @@
 - [Circuit Details](#circuit-details)
 - [Software Used](#software-used)
   * [eSim](#esim)
-  * [NgSpice](#ngspice)![image](https://user-images.githubusercontent.com/101127502/157093277-41b92374-12ce-4bf1-99f9-349ad3861bcf.png)
+
 
 - [Circuit Diagram in eSim](#circuit-diagram-in-esim)
-- [Makerchip](#makerchip-1)
-- [Makerchip Plots](#makerchip-plots)
+
 - [Netlists](#netlists)
 - [NgSpice Plots](#ngspice-plots)
-- [GAW Plots](#gaw-plots)
+
 - [Steps to run generate NgVeri Model](#steps-to-run-generate-ngveri-model)
 - [Steps to run this project](#steps-to-run-this-project)
 - [Acknowlegdements](#acknowlegdements)
@@ -30,9 +29,9 @@ devices such as relaxation oscillators, timers, and flip-flop.
 It has various applications such as wave generator, 
 Voltage-frequency converter, pulse synchronization etc.
 ## Reference Circuit Diagram
-![image]
+![image](https://user-images.githubusercontent.com/101127502/157094542-fccede4e-ab6e-43b8-ad02-2813f4dbdf6d.png)
 ## Reference Waveform
-![image](https://user-images.githubusercontent.com/58599984/152688402-29877a15-deb3-4dee-9bcc-2313851182de.png)
+![image](https://user-images.githubusercontent.com/101127502/157093809-223b6929-3c17-4d74-ab75-d5cb409e3fd9.png)
 ## Circuit Details
 	In this circuit we have used 555 timer IC.which has inbuilt combination of comparators,transistor and SR flipflop. So initially when the circuit is powered ON, Trigger pin voltage is below Vcc/3, that turns on the lower comparator and it gives the output as HIGH which further makes the output of 555chip is also HIGH.</br>
 	When voltage reaches above Vcc/3 then lower comparator output becomes LOW,but the 555 output still remains HIGH </br>
@@ -61,20 +60,15 @@ https://www.veripool.org/verilator/
 
 ## Circuit Diagram in eSim
 The following is the schematic in eSim:
-![image](https://user-images.githubusercontent.com/58599984/156439856-079de481-b68d-4955-b9c9-6ff310c5de58.png)
+![ckt](https://user-images.githubusercontent.com/101127502/157094031-18b2c768-6d17-4764-8c39-1f8a46d55091.png)
 
 
 
 ## Netlists
-![image](https://user-images.githubusercontent.com/58599984/156440985-0a983124-b5ad-4b60-b83f-7adf0e7c36fb.png)
+![Screenshot (322)](https://user-images.githubusercontent.com/101127502/157094109-aa8470fb-6245-4e27-99e7-54547d674de8.png)
 ## NgSpice Plots
-![image](https://user-images.githubusercontent.com/58599984/156440036-188911e0-9bb2-4d9f-b53d-878f5792d1c6.png)
-![image](https://user-images.githubusercontent.com/58599984/156440082-c3f319ef-3224-4595-85e9-38bae135350f.png)
+![graph](https://user-images.githubusercontent.com/101127502/157094160-a77d5d95-b053-42d9-b414-1705f41d0dab.png)
 
-![image](https://user-images.githubusercontent.com/58599984/156439624-353c14ac-4216-4aa7-8207-64f4c287b2b7.png)
-![image](https://user-images.githubusercontent.com/58599984/156439590-9371c62f-384b-42f8-9403-9704429d752d.png)
-## GAW Plots
-![image](https://user-images.githubusercontent.com/58599984/156439535-edb78fc7-a6e6-4178-864a-7cea5ea37e23.png)
 ## Steps to run generate NgVeri Model
 1. Open eSim
 2. Run NgVeri-Makerchip 
